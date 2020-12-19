@@ -7,3 +7,17 @@ menu = {
 	"coffee" : 1.49,
 	"tea" : 1.09
 }
+
+def formatInput(textLine):
+	"""
+	the purpose of this funciton is to clean
+	leading and trailing spaces, including 
+	cases when multiple spaces separate words
+	
+	:param: textLine: the input text
+	"""
+	textLine = textLine.lower().strip()
+	wordList = textLine.split()
+	textLine = " ".join(wordList)
+	
+	return textLine
