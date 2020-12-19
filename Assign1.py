@@ -55,3 +55,8 @@ while True:
 		quantity = input("*** Invalid Quantity, Please Re-enter: ")
 
 	before_tax += float(quantity) * menu[item] if combo == 0 else combo * float(quantity)
+
+tax = round(before_tax * 0.13, 2)
+total = round(before_tax + tax, 2)
+
+print("\nCost  : {:>8.2f}\nTax   : {:>8.2f} \nTotal : {:>8.2f}\n".format(before_tax, tax, total))
