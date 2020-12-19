@@ -1,4 +1,4 @@
-# Good Morning Canada - CS1026: Assignment 1
+# Good Morning Canada - CS1026 Assignment 1
 
 In this assignment, you will write a completeprogram in Python that computes the cost of breakfast at the Good Morning Canada! restaurant. Your program is expected to prompt the user for input and validate it before computing the results. Your program will make use of expressions, decisions, and input/output in Python.  You should name your program Assign1.py
 
