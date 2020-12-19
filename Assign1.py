@@ -39,3 +39,11 @@ while True:
 
 	while not isValidItem(item):
 		item = formatInput(input("*** Invalid Item, Please Re-enter: ")) 
+	
+	combo = 0
+	if item == "small breakfast":
+		combo += menu["egg"] + menu['hash brown'] + 2 * menu['toast'] + 2 * menu['bacon'] + menu['sausage']
+	elif item == "regular breakfast":
+		combo += 2 * menu["egg"] + menu['hash brown'] + 2 * menu['toast'] + 4 * menu['bacon'] + 2 * menu['sausage']
+	elif item == "big breakfast":
+		combo += 3 * menu["egg"] + 2 * menu['hash brown'] + 4 * menu['toast'] + 6 * menu['bacon'] + 3 * menu['sausage']
