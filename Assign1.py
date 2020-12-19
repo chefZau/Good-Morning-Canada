@@ -21,3 +21,12 @@ def formatInput(textLine):
 	textLine = " ".join(wordList)
 	
 	return textLine
+
+def isValidItem(userInput):
+	"""
+	the purpose of this function is to test 
+	user input is valid or not
+	
+	:param userInput: user inputs
+	"""
+	return (userInput in menu.keys() or userInput in ["small breakfast", "regular breakfast", "big breakfast"])
