@@ -31,6 +31,8 @@ def isValidItem(userInput):
 	"""
 	return (userInput in menu.keys() or userInput in ["small breakfast", "regular breakfast", "big breakfast"])
 
+before_tax = 0
+
 while True:
 	
 	item = formatInput(input("Enter item (q to terminate): small breakfast, regular breakfast, big breakfast, egg, bacon, sausage, hash brown, toast, coffee, tea:")) 
@@ -51,3 +53,5 @@ while True:
 	quantity = input("Enter quantity:")
 	while not quantity.isnumeric():
 		quantity = input("*** Invalid Quantity, Please Re-enter: ")
+
+	before_tax += float(quantity) * menu[item] if combo == 0 else combo * float(quantity)
