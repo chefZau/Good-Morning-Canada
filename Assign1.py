@@ -30,3 +30,12 @@ def isValidItem(userInput):
 	:param userInput: user inputs
 	"""
 	return (userInput in menu.keys() or userInput in ["small breakfast", "regular breakfast", "big breakfast"])
+
+while True:
+	
+	item = formatInput(input("Enter item (q to terminate): small breakfast, regular breakfast, big breakfast, egg, bacon, sausage, hash brown, toast, coffee, tea:")) 
+	
+	if item == "q": break
+
+	while not isValidItem(item):
+		item = formatInput(input("*** Invalid Item, Please Re-enter: ")) 
